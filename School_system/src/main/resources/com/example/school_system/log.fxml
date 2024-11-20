@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.school_system.Login">
+   <children>
+      <AnchorPane fx:id="anchor" layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <AnchorPane fx:id="b" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="393.0" prefWidth="600.0">
+               <children>
+                  <BorderPane fx:id="p" layoutY="-7.0" prefHeight="407.0" prefWidth="361.0">
+                     <top>
+                        <ImageView fx:id="schoo" fitHeight="381.0" fitWidth="376.0" pickOnBounds="true" BorderPane.alignment="CENTER">
+                           <image>
+                              <Image url="@sch.gif" />
+                           </image>
+                        </ImageView>
+                     </top>
+                  </BorderPane>
+                  <BorderPane fx:id="back" layoutX="361.0" prefHeight="393.0" prefWidth="241.0">
+                     <top>
+                        <ImageView fx:id="lock" fitHeight="148.0" fitWidth="168.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                           <image>
+                              <Image url="@lock.gif" />
+                           </image>
+                        </ImageView>
+                     </top>
+                     <center>
+                        <AnchorPane prefHeight="244.0" prefWidth="271.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <Button fx:id="looo" layoutX="38.0" layoutY="158.0" mnemonicParsing="false" onAction="#buttonkog" prefHeight="39.0" prefWidth="165.0" style="-fx-background-color: black;" text="Log in " textFill="#eeecec">
+                                 <font>
+                                    <Font name="System Bold Italic" size="18.0" />
+                                 </font>
+                              </Button>
+                              <TextField fx:id="username" layoutX="20.0" layoutY="22.0" onAction="#username" prefHeight="30.0" prefWidth="204.0" promptText="Username" />
+                              <PasswordField fx:id="pass" layoutX="20.0" layoutY="78.0" prefHeight="32.0" prefWidth="206.0" promptText="password" />
+                           </children>
+                        </AnchorPane>
+                     </center>
+                  </BorderPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

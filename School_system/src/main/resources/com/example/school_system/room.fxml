@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="581.0" prefWidth="706.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.school_system.Room">
+   <children>
+      <ImageView fx:id="backgr" fitHeight="581.0" fitWidth="706.0" layoutX="-1.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../317473669_1309305216558542_5006555310355971347_n.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="search" layoutX="513.0" layoutY="382.0" mnemonicParsing="false" onAction="#search" prefHeight="33.0" prefWidth="162.0" style="-fx-background-color: black;" text="Search" textFill="#fbfafa">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="update" layoutX="513.0" layoutY="430.0" mnemonicParsing="false" onAction="#update" prefHeight="33.0" prefWidth="162.0" style="-fx-background-color: black;" text="Update" textFill="#fbfafa">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="delete" layoutX="513.0" layoutY="478.0" mnemonicParsing="false" onAction="#delete" prefHeight="33.0" prefWidth="162.0" style="-fx-background-color: black;" text="Delete" textFill="#fbfafa">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="add" layoutX="513.0" layoutY="331.0" mnemonicParsing="false" onAction="#add" prefHeight="33.0" prefWidth="162.0" style="-fx-background-color: black;" text="Add" textFill="#fbfafa">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="roomid" layoutX="63.0" layoutY="104.0" prefHeight="33.0" prefWidth="243.0" promptText="Room_ID" />
+      <TextField fx:id="space" layoutX="63.0" layoutY="160.0" prefHeight="33.0" prefWidth="243.0" promptText="Space" />
+      <TextField fx:id="type" layoutX="63.0" layoutY="217.0" prefHeight="33.0" prefWidth="243.0" promptText="Type " />
+      <Label fx:id="titleroom" alignment="CENTER" contentDisplay="CENTER" layoutX="85.0" layoutY="34.0" prefHeight="46.0" prefWidth="162.0" style="-fx-background-color: black;" text="Room" textAlignment="JUSTIFY" textFill="#f5f5f5" textOverrun="CENTER_ELLIPSIS" />
+      <ImageView fx:id="image" fitHeight="251.0" fitWidth="280.0" layoutX="389.0" layoutY="24.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../.l.jpeg" />
+         </image>
+      </ImageView>
+      <Button fx:id="exit" layoutX="542.0" layoutY="536.0" mnemonicParsing="false" onAction="#exit" prefHeight="33.0" prefWidth="102.0" style="-fx-background-color: black;" text="exit" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <TableView fx:id="table" layoutX="-1.0" layoutY="324.0" prefHeight="259.0" prefWidth="403.0">
+        <columns>
+          <TableColumn fx:id="ir" prefWidth="130.0" text="Room ID " />
+          <TableColumn fx:id="sp" prefWidth="109.0" text="Space" />
+            <TableColumn fx:id="ty" prefWidth="162.0" text="Type" />
+        </columns>
+      </TableView>
+      <Button fx:id="refresh" layoutX="63.0" layoutY="279.0" mnemonicParsing="false" onAction="#refresh" text="refresh" />
+   </children>
+</AnchorPane>

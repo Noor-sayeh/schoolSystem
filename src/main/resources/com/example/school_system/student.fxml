@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="614.0" prefWidth="756.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.school_system.Student">
+   <children>
+      <AnchorPane fx:id="backgr" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="645.0" prefWidth="767.0">
+         <children>
+            <ImageView fx:id="backg" fitHeight="640.0" fitWidth="780.0" layoutX="-11.0" layoutY="4.0" pickOnBounds="true">
+               <image>
+                  <Image url="@317473669_1309305216558542_5006555310355971347_n.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="165.0" layoutY="33.0" />
+            <Button fx:id="add" layoutX="597.0" layoutY="147.0" mnemonicParsing="false" onAction="#add" prefHeight="30.0" prefWidth="133.0" style="-fx-background-color: black;" text="Add" textFill="#eae6e6">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="search" layoutX="597.0" layoutY="194.0" mnemonicParsing="false" onAction="#search" prefHeight="30.0" prefWidth="133.0" style="-fx-background-color: black;" text="Search" textFill="#eae6e6">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="update" layoutX="597.0" layoutY="243.0" mnemonicParsing="false" onAction="#update" prefHeight="30.0" prefWidth="133.0" style="-fx-background-color: black;" text="Update" textFill="#eae6e6">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="delete" layoutX="597.0" layoutY="293.0" mnemonicParsing="false" onAction="#delete" prefHeight="30.0" prefWidth="133.0" style="-fx-background-color: black;" text="Delete" textFill="#eae6e6">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <TextField fx:id="name" layoutX="31.0" layoutY="132.0" onAction="#name" prefHeight="30.0" prefWidth="238.0" promptText="Name" />
+            <TextField fx:id="email" layoutX="31.0" layoutY="325.0" onAction="#email" prefHeight="30.0" prefWidth="238.0" promptText="Email" />
+            <TextField fx:id="id" layoutX="318.0" layoutY="132.0" onAction="#ID" prefHeight="30.0" prefWidth="238.0" promptText="Id" />
+            <TextField fx:id="parentname" layoutX="31.0" layoutY="228.0" onAction="#pname" prefHeight="30.0" prefWidth="238.0" promptText="Parent name" />
+            <TextField fx:id="parentnumber" layoutX="318.0" layoutY="228.0" onAction="#pnaumber" prefHeight="30.0" prefWidth="238.0" promptText="Parent number" />
+            <TextField fx:id="address" layoutX="318.0" layoutY="325.0" onAction="#address" prefHeight="30.0" prefWidth="238.0" promptText="Address" />
+            <Label layoutX="158.0" layoutY="33.0" />
+            <TextField fx:id="gender" layoutX="318.0" layoutY="179.0" onAction="#gender" prefHeight="30.0" prefWidth="238.0" promptText="Gender" />
+            <TextField fx:id="roomid" layoutX="31.0" layoutY="278.0" onAction="#roomid" prefHeight="30.0" prefWidth="238.0" promptText="Room id" />
+            <TextField fx:id="massn" layoutX="318.0" layoutY="278.0" onAction="#mssn" prefHeight="30.0" prefWidth="238.0" promptText="Mnager ssn" />
+            <Button fx:id="exit" layoutX="608.0" layoutY="340.0" mnemonicParsing="false" onAction="#exit" prefHeight="30.0" prefWidth="112.0" style="-fx-background-color: black;" text="Exit" textFill="#fffdfd">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="image" fitHeight="122.0" fitWidth="177.0" layoutX="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@stk.gif" />
+               </image>
+            </ImageView>
+            <Label fx:id="stlabel" alignment="CENTER" layoutX="218.0" layoutY="22.0" prefHeight="65.0" prefWidth="200.0" style="-fx-background-color: black;" text="Student" textFill="#f8f5f5">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <TextField fx:id="birthdate" layoutX="31.0" layoutY="179.0" onAction="#birth" prefHeight="30.0" prefWidth="238.0" promptText="Birthdate" />
+            <TableView fx:id="table" layoutY="388.0" prefHeight="259.0" prefWidth="767.0">
+              <columns>
+                <TableColumn fx:id="NAME" prefWidth="100.0" text="Name" />
+                <TableColumn fx:id="idd" prefWidth="50.0" text="Id" />
+                  <TableColumn fx:id="bth" prefWidth="103.0" text="Birthdate" />
+                  <TableColumn fx:id="gend" prefWidth="45.0" text="Gender" />
+                  <TableColumn fx:id="pname" prefWidth="90.0" text="P.name" />
+                  <TableColumn fx:id="pnumber" prefWidth="70.0" text="P.number" />
+                  <TableColumn fx:id="rid" prefWidth="47.0" text="R.id" />
+                  <TableColumn fx:id="mss" prefWidth="53.0" text="MSSN" />
+                  <TableColumn fx:id="gmail" prefWidth="135.0" text="Gmail" />
+                  <TableColumn fx:id="addres" prefWidth="73.0" text="Adress" />
+              </columns>
+            </TableView>
+            <Button fx:id="refresh" layoutX="638.0" layoutY="75.0" mnemonicParsing="false" onAction="#refresh" text="Refresh" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

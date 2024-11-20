@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+
+<AnchorPane fx:id="apane" prefHeight="612.0" prefWidth="741.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.school_system.Teachergui">
+   <children>
+      <AnchorPane fx:id="anchor" layoutX="-4.0" layoutY="1.0" prefHeight="494.0" prefWidth="526.0">
+         <children>
+            <BorderPane fx:id="bpane" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="475.0" prefWidth="605.0">
+               <left>
+                  <StackPane fx:id="spane" alignment="TOP_CENTER" BorderPane.alignment="CENTER">
+                     <children>
+                        <Pane fx:id="pane" prefHeight="433.0" prefWidth="0.0">
+                           <children>
+                              <ImageView fx:id="teacher" fitHeight="625.0" fitWidth="741.0" layoutX="-5.0" layoutY="-25.0" pickOnBounds="true" smooth="false">
+                                 <image>
+                                    <Image url="@317473669_1309305216558542_5006555310355971347_n.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="395.0" layoutY="33.0" />
+                              <TextField fx:id="tname" layoutX="14.0" layoutY="130.0" onAction="#name" prefHeight="30.0" prefWidth="243.0" promptText="Name" />
+                              <TextField fx:id="tnumber" layoutX="326.0" layoutY="130.0" onAction="#number" prefHeight="30.0" prefWidth="255.0" promptText="Number" />
+                              <TextField fx:id="tgamil" layoutX="14.0" layoutY="185.0" onAction="#gmail" prefHeight="34.0" prefWidth="244.0" promptText="Gmail" />
+                              <TextField fx:id="tcourse" layoutX="9.0" layoutY="238.0" onAction="#course" prefHeight="33.0" prefWidth="255.0" promptText="Course" />
+                              <TextField fx:id="numofst" layoutX="326.0" layoutY="186.0" onAction="#numofstu" prefHeight="32.0" prefWidth="255.0" promptText="Number of students" />
+                              <Button fx:id="Add" layoutX="600.0" layoutY="107.0" mnemonicParsing="false" onAction="#add" prefHeight="29.0" prefWidth="130.0" style="-fx-background-color: black;" text="Add" textFill="WHITE" />
+                              <Button fx:id="Search" layoutX="600.0" layoutY="157.0" mnemonicParsing="false" onAction="#search" prefHeight="28.0" prefWidth="130.0" style="-fx-background-color: black;" text="Search" textFill="WHITE" />
+                              <Button fx:id="UPdate" layoutX="600.0" layoutY="205.0" mnemonicParsing="false" onAction="#update" prefHeight="28.0" prefWidth="130.0" style="-fx-background-color: black;" text="Update" textFill="WHITE" />
+                              <Button fx:id="Delete" layoutX="600.0" layoutY="255.0" mnemonicParsing="false" onAction="#delete" prefHeight="28.0" prefWidth="130.0" style="-fx-background-color: black;" text="Delete" textFill="WHITE" />
+                              <TextField fx:id="tempssn" layoutX="326.0" layoutY="238.0" onAction="#empssn" prefHeight="33.0" prefWidth="257.0" promptText="Employee SSN" />
+                              <Button fx:id="exit" layoutX="624.0" layoutY="303.0" mnemonicParsing="false" onAction="#exit" prefHeight="28.0" prefWidth="82.0" style="-fx-background-color: black;" text="Exit" textFill="#fcfcfc" />
+                              <ImageView fx:id="image" fitHeight="129.0" fitWidth="160.0" layoutX="273.0" layoutY="-8.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@teacher_blackboard.png" />
+                                 </image>
+                              </ImageView>
+                              <TableView fx:id="table" layoutX="-5.0" layoutY="358.0" prefHeight="242.0" prefWidth="741.0">
+                                <columns>
+                                  <TableColumn fx:id="namee" prefWidth="99.0" text="Name" />
+                                  <TableColumn fx:id="numbere" prefWidth="116.0" text="Number" />
+                                    <TableColumn fx:id="gmaile" prefWidth="167.0" text="Gmail" />
+                                    <TableColumn fx:id="stnume" prefWidth="102.0" text="Students number" />
+                                    <TableColumn fx:id="coursenamee" prefWidth="157.0" text="Course" />
+                                    <TableColumn fx:id="empssne" prefWidth="99.0" text="Employee SSN" />
+                                </columns>
+                              </TableView>
+                              <Button fx:id="refresh" layoutX="31.0" layoutY="305.0" mnemonicParsing="false" onAction="#refresh" text="Refresh" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </StackPane>
+               </left>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
